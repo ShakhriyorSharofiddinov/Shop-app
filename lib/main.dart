@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
         textTheme: const TextTheme(
-          bodyText2: TextStyle(color: Colors.black54),
+          bodyMedium: TextStyle(color: Colors.black54),
         ),
       ),
       home: const HomeScreen(),

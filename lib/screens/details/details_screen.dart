@@ -29,12 +29,14 @@ class DetailsScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
+      body: ListView(
+        physics: const BouncingScrollPhysics(
+          parent: AlwaysScrollableScrollPhysics()
+        ),
         children: [
           Image.asset(
             product.image,
             height: MediaQuery.of(context).size.height * 0.4,
-            fit: BoxFit.cover,
           ),
           const SizedBox(height: defaultPadding * 1.5),
           Expanded(
